@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>App de Comida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- CONTENIDO SCROLEABLE -->
+    <main class="app-content">
+      <!-- Dirección -->
+      <section class="location-section">
+        <p class="location-street">Villamontes-Tarija-Bolivia</p>
+        <button class="location-type">
+          Tu segundo hogar
+          <span class="chevron">▾</span>
+        </button>
+      </section>
+
+      <!-- Buscador -->
+      <section class="search-section">
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder='Busca "pizza"' />
+        </div>
+      </section>
+
+      <!-- Tarjetas grandes -->
+      <section class="feature-cards">
+        <!-- Restaurantes -->
+        <article class="feature-card feature-rest">
+          <div class="feature-image-circle">
+            <!-- AQUÍ TU IMAGEN DE HAMBURGUESA -->
+            <img src="img/foto1.png" alt="Restaurantes" />
+          </div>
+          <p class="feature-label">Restaurantes</p>
+        </article>
+
+        <!-- Turbo Market -->
+        <article class="feature-card feature-turbo">
+          <div class="feature-image-circle">
+            <!-- AQUÍ TU IMAGEN DE CANASTA -->
+            <img src="img/foto2.png" alt="Turbo Market" />
+          </div>
+          <p class="feature-label">Turbo Market</p>
+        </article>
+      </section>
+
+      <!-- Accesos rápidos (Súper, Farmacia, etc) -->
+      <section class="quick-actions">
+        <button class="quick-item">
+          <div class="quick-image">
+            <img src="img/foto3.png" alt="Súper" />
+          </div>
+          <span>Súper</span>
+        </button>
+
+        <button class="quick-item">
+          <div class="quick-image">
+            <img src="img/foto4.png" alt="Farmacia" />
+          </div>
+          <span>Farmacia</span>
+        </button>
+
+        <button class="quick-item">
+          <div class="quick-image">
+            <img src="img/foto5.png" alt="RappiFavor" />
+          </div>
+          <span>RappiFavor</span>
+        </button>
+
+        <button class="quick-item">
+          <div class="quick-image">
+            <img src="img/foto6.png" alt="Kiosco" />
+          </div>
+          <span>Kiosco</span>
+        </button>
+      </section>
+
+      <!-- Tiendas favoritas -->
+      <section class="favorites-section">
+        <h2 class="section-title">Nuestras Redes</h2>
+        <div class="favorites-row">
+          <!-- Cada logo es una imagen redonda -->
+          <div class="favorite-logo">
+            <img src="img/tik.png" alt="Tienda 1" />
+          </div>
+          <div class="favorite-logo">
+            <img src="img/fa.png" alt="Tienda 2" />
+          </div>
+          <div class="favorite-logo">
+            <img src="img/w.png" alt="Tienda 3" />
+          </div>
+          <div class="favorite-logo">
+            <img src="img/i.jpg" alt="Tienda 4" />
+          </div>
+          <div class="favorite-logo">
+            <img src="img/d.png" alt="Tienda 5" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Banner -->
+      <section class="banner-section">
+        <div class="banner-card">
+          <!-- Puedes usar una imagen completa si quieres: -->
+          <!-- <img src="img/banner.png" alt="Promo"> -->
+          <div class="banner-top">VIERNES DE</div>
+          <div class="banner-main">DESAYUNO</div>
+          <div class="banner-chip">
+            <span>Pro</span>
+            <span>Turbo 10min+</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- BARRA FIJA ABAJO -->
+    <nav class="bottom-nav">
+      <button class="nav-item nav-item-active">
+        <div class="nav-icon-wrapper">
+          <img src="img/foto7.png" alt="Inicio" class="nav-icon-img" />
+        </div>
+        <span class="nav-label">Inicio</span>
+      </button>
+
+      <button class="nav-item">
+        <div class="nav-icon-wrapper">
+          <img src="img/foto8.png" alt="Ofertas" class="nav-icon-img" />
+        </div>
+        <span class="nav-label">Juego</span>
+      </button>
+
+      <button class="nav-item">
+        <div class="nav-icon-wrapper">
+          <img src="img/foto9.png" alt="Favoritos" class="nav-icon-img" />
+        </div>
+        <span class="nav-label">Menu</span>
+      </button>
+
+      <button class="nav-item">
+        <div class="nav-icon-wrapper">
+          <img src="img/foto10.png" alt="Cuenta" class="nav-icon-img" />
+        </div>
+        <span class="nav-label">Cuenta</span>
+      </button>
+    </nav>
+  </div>
+</body>
+</html>
