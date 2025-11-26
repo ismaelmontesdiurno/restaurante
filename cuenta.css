@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Contenedor del test */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.question {
+    margin-bottom: 25px;
+}
+
+.question h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* input del apodo */
+.nickname-input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.option {
+    display: block;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    margin: 6px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.option:hover {
+    background: #f0f0f0;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #333;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: #000;
+}
+
+/* ---------- PANTALLA DE RESULTADO ---------- */
+
+.resultado-body {
+    background: #f5f7fb;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-wrapper {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 24px 16px 40px;
+}
+
+/* Tarjeta con imagen de fondo */
+.profile-card {
+    position: relative;
+    border-radius: 24px;
+    padding: 24px 20px 26px;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+    background-image: url("perfil-fondo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-card {
+    position: relative;
+    border-radius: 24px;
+    padding: 24px 20px 26px;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+    background-image: url("perfil-fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;               /* IMPORTANTE: respeta bordes redondeados */
+}
+
+/* Capa oscura DETRÁS, NO encima */
+.profile-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 0;                     /* estar atrás del contenido */
+}
+
+/* Todo el contenido por encima del fondo */
+.profile-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Foto redonda correctamente por encima */
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+    margin: 0 auto 16px auto;
+    z-index: 2;                     /* aseguramos prioridad */
+}
+
+/* Foto redonda */
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+    margin: 0 auto 16px auto;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Nombre y rol */
+.profile-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.profile-role {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-bottom: 18px;
+}
+
+/* Fila de stats */
+.profile-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.profile-stat {
+    flex: 1;
+}
+
+.profile-stat + .profile-stat {
+    border-left: 1px solid rgba(255,255,255,0.4);
+}
+
+.profile-stat-value {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.profile-stat-label {
+    font-size: 11px;
+    opacity: 0.9;
+}
+
+/* Tarjeta blanca */
+.result-card {
+    margin-top: 18px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 18px 18px 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.result-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.result-card-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.result-card-sub {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.45;
+    margin-bottom: 18px;
+}
+
+/* Botón rehacer test */
+.reset-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    margin-top: 18px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(135deg, #4a90e2, #145fd6);
+    box-shadow: 0 5px 20px rgba(30, 90, 180, 0.3);
+    transition: 0.3s ease;
+}
+
+.reset-btn:hover {
+    background: linear-gradient(135deg, #5aa3ff, #1b6fff);
+    transform: scale(1.03);
+    box-shadow: 0 8px 30px rgba(30, 90, 180, 0.4);
+}

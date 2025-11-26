@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Estilo Gastronómico</title>
+    <link rel="stylesheet" href="cuenta.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">Test de Estilo Gastronómico</h1>
+    <p class="subtitle">Responde estas preguntas rápidas</p>
+
+    <form id="testForm">
+
+        <!-- 0: APODO -->
+        <div class="question">
+            <h2>1. ¿Cuál es tu apodo o nombre para mostrar?</h2>
+            <input type="text" name="nickname" class="nickname-input" placeholder="Ej: Gato1234" required>
+        </div>
+
+        <!-- 1 -->
+        <div class="question">
+            <h2>2. ¿A qué hora sueles venir a comer?</h2>
+            <label class="option"><input type="radio" name="q1" value="6-7pm"> 6pm – 7pm</label>
+            <label class="option"><input type="radio" name="q1" value="7-9pm"> 7pm – 9pm</label>
+            <label class="option"><input type="radio" name="q1" value="despues"> Después de las 9pm</label>
+        </div>
+
+        <!-- 2 -->
+        <div class="question">
+            <h2>3. ¿Cuál es tu opción favorita al comer?</h2>
+            <label class="option"><input type="radio" name="q2" value="pizza"> Pizza</label>
+            <label class="option"><input type="radio" name="q2" value="hamburguesa"> Hamburguesa</label>
+            <label class="option"><input type="radio" name="q2" value="sandwich"> Sándwich</label>
+            <label class="option"><input type="radio" name="q2" value="ligero"> Algo ligero</label>
+        </div>
+
+        <!-- 3 -->
+        <div class="question">
+            <h2>4. ¿Cómo prefieres el ambiente cuando comes?</h2>
+            <label class="option"><input type="radio" name="q3" value="tranquilo"> Tranquilo</label>
+            <label class="option"><input type="radio" name="q3" value="musica"> Con música</label>
+            <label class="option"><input type="radio" name="q3" value="gente"> Con gente</label>
+            <label class="option"><input type="radio" name="q3" value="silencio"> Sin mucho ruido</label>
+        </div>
+
+        <!-- 4 -->
+        <div class="question">
+            <h2>5. ¿Qué es lo que más te atrae del lugar?</h2>
+            <label class="option"><input type="radio" name="q4" value="comida"> La comida</label>
+            <label class="option"><input type="radio" name="q4" value="comodidad"> Lo cómodo</label>
+            <label class="option"><input type="radio" name="q4" value="ambiente"> El ambiente</label>
+            <label class="option"><input type="radio" name="q4" value="noche"> Que está abierto de noche</label>
+        </div>
+
+        <!-- 5 -->
+        <div class="question">
+            <h2>6. ¿Qué bebida prefieres para acompañar?</h2>
+            <label class="option"><input type="radio" name="q5" value="refresco"> Refresco</label>
+            <label class="option"><input type="radio" name="q5" value="cafe"> Café</label>
+            <label class="option"><input type="radio" name="q5" value="jugo"> Jugo</label>
+            <label class="option"><input type="radio" name="q5" value="agua"> Agua</label>
+        </div>
+
+        <!-- 6 -->
+        <div class="question">
+            <h2>7. ¿Qué tanto te gusta probar cosas nuevas?</h2>
+            <label class="option"><input type="radio" name="q6" value="siempre"> Siempre pruebo algo nuevo</label>
+            <label class="option"><input type="radio" name="q6" value="aveces"> A veces</label>
+            <label class="option"><input type="radio" name="q6" value="poco"> Casi nunca</label>
+            <label class="option"><input type="radio" name="q6" value="nunca"> Solo lo que ya conozco</label>
+        </div>
+
+        <!-- 7 -->
+        <div class="question">
+            <h2>8. ¿Qué porción prefieres usualmente?</h2>
+            <label class="option"><input type="radio" name="q7" value="lleno"> Algo llenador</label>
+            <label class="option"><input type="radio" name="q7" value="normal"> Algo normal</label>
+            <label class="option"><input type="radio" name="q7" value="ligero"> Algo ligero</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Ver mi perfil</button>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
